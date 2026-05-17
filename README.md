@@ -76,12 +76,13 @@ Abaixo está a lista com tudo que você aprenderá:
 * Iteração sobre ranges
 * Iteração sobre arrays, slices, vetores e iteradores
 
-### Pattern matching básico
+### [Pattern matching básico](src/pattern_matching.rs)
 
 * `match`
 * `_`
 * Match exaustivo
 * Match com múltiplos padrões
+* Bindings em padrões
 * Match guards
 * `if let`
 * `while let`
@@ -1527,4 +1528,3 @@ Para ficar realmente forte em Rust, os tópicos mais críticos são:
 * Memory layout
 * Concurrency
 * Macros
-

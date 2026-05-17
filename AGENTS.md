@@ -50,6 +50,19 @@ Se algum comando falhar por problema ambiental, reporte claramente o comando, o 
 - Use `println!` para tornar os exemplos observáveis durante `cargo run`.
 - Evite entrada interativa nos exemplos iniciais; isso mantém o roteiro simples de executar.
 
+## Explicação de Sintaxe
+
+- Explique melhor qualquer sintaxe que não seja trivial, que seja pouco comum em outras linguagens ou que possa causar confusão com outra sintaxe parecida do Rust.
+- Quando uma sintaxe tiver aparência ambígua, comente explicitamente o que ela é e o que ela não é. Exemplo: labels de laço como `'saida:` parecem lifetimes por causa do apóstrofo, mas são conceitos diferentes.
+- Para sintaxes desse tipo, inclua preferencialmente:
+  - a forma geral da sintaxe;
+  - onde ela pode ser usada;
+  - onde ela não pode ser usada;
+  - um exemplo executável;
+  - um exemplo comentado que não compilaria, quando isso ajudar a evitar confusão.
+- Não suponha que o leitor conhece detalhes específicos de Rust. Prefira uma explicação curta e direta antes do exemplo.
+- Quando houver duas sintaxes parecidas, compare as duas no comentário. Exemplos: `&` como referência vs `&` bitwise, `*` como dereference vs `*` multiplicação, `'label` vs lifetime, `match` vs `if let`, `loop` com `break valor` vs `while`.
+
 ## Git e Escopo
 
 - Não reverta mudanças do usuário.
