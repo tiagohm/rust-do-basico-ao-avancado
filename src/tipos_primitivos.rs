@@ -70,6 +70,45 @@ fn floats() {
     println!("0.1 + 0.2 = {quase_zero_tres}, diferença para 0.3 = {diferenca}");
 }
 
+fn literais_numericos_e_sufixos() {
+    // Literais numéricos são valores escritos diretamente no código, como `10`.
+    // Rust permite escrever esses literais de várias formas para melhorar a leitura.
+    //
+    // Separador visual:
+    // - `_` pode ser usado dentro de números para separar grupos;
+    // - ele não muda o valor, apenas facilita a leitura.
+    let um_milhao = 1_000_000;
+
+    // Bases numéricas:
+    // - decimal: `255`;
+    // - hexadecimal: `0xff`;
+    // - octal: `0o377`;
+    // - binário: `0b1111_1111`;
+    // - byte ASCII: `b'A'`, que produz um `u8`.
+    let decimal = 255;
+    let hexadecimal = 0xff;
+    let octal = 0o377;
+    let binario = 0b1111_1111;
+    let byte_ascii = b'A';
+
+    // Sufixo de tipo:
+    // - `10u8` força o literal a ser `u8`;
+    // - `10_i64` força o literal a ser `i64`;
+    // - `3.14f32` força o literal a ser `f32`.
+    //
+    // O sufixo é útil quando a inferência não tem contexto suficiente
+    // ou quando queremos ensinar claramente o tipo usado.
+    let pequeno = 10u8;
+    let longo = 10_i64;
+    let pi_aproximado = 3.14f32;
+
+    println!("Literais numéricos e sufixos:");
+    println!("um_milhao={um_milhao}");
+    println!("decimal={decimal}, hexadecimal={hexadecimal}, octal={octal}, binario={binario}");
+    println!("byte ASCII b'A'={byte_ascii}");
+    println!("pequeno={pequeno}, longo={longo}, pi_aproximado={pi_aproximado}");
+}
+
 fn booleanos() {
     // `bool` possui apenas dois valores: `true` e `false`.
     // Ele é usado em condicionais, laços e expressões lógicas.
@@ -211,6 +250,7 @@ pub fn run() {
     inteiros_com_sinal();
     inteiros_sem_sinal();
     floats();
+    literais_numericos_e_sufixos();
     booleanos();
     caracteres();
     strings_literais();

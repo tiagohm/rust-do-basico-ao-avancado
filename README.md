@@ -31,6 +31,7 @@ Abaixo está a lista com tudo que você aprenderá:
 * Inteiros: `i8`, `i16`, `i32`, `i64`, `i128`, `isize`
 * Inteiros sem sinal: `u8`, `u16`, `u32`, `u64`, `u128`, `usize`
 * Floats: `f32`, `f64`
+* Literais numéricos, bases e sufixos de tipo
 * Booleanos: `bool`
 * Caracteres: `char`
 * Strings literais: `&str`
@@ -50,6 +51,7 @@ Abaixo está a lista com tudo que você aprenderá:
 * Range: `..`, `..=`
 * Referência: `&`
 * Dereference: `*`
+* Precedência de operadores e uso de parênteses
 
 ## 2. Controle de fluxo
 

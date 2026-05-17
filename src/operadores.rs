@@ -188,6 +188,33 @@ fn operador_de_dereference() {
     // então nem sempre precisamos escrever `*` manualmente.
 }
 
+fn precedencia_e_parenteses() {
+    // Operadores têm precedência, ou seja, alguns são avaliados antes de outros.
+    // Isso existe em muitas linguagens, mas pode causar leitura ambígua quando a expressão cresce.
+    //
+    // Exemplo:
+    // - `*` tem precedência maior que `+`;
+    // - então `2 + 3 * 4` é lido como `2 + (3 * 4)`.
+    let sem_parenteses = 2 + 3 * 4;
+    let com_parenteses = (2 + 3) * 4;
+
+    println!("Precedência e parênteses:");
+    println!("2 + 3 * 4 = {sem_parenteses}");
+    println!("(2 + 3) * 4 = {com_parenteses}");
+
+    // Quando houver dúvida, prefira parênteses.
+    // Eles deixam a intenção explícita e evitam depender da memória sobre precedência.
+    let acesso_permitido = true;
+    let modo_manutencao = false;
+    let usuario_admin = false;
+
+    let regra_sem_parenteses = acesso_permitido && !modo_manutencao || usuario_admin;
+    let regra_com_parenteses = (acesso_permitido && !modo_manutencao) || usuario_admin;
+
+    println!("regra sem parênteses={regra_sem_parenteses}");
+    println!("regra com parênteses={regra_com_parenteses}");
+}
+
 pub fn run() {
     println!("##### 1.3 Operadores #####");
     operadores_aritmeticos();
@@ -198,4 +225,5 @@ pub fn run() {
     operadores_de_range();
     operador_de_referencia();
     operador_de_dereference();
+    precedencia_e_parenteses();
 }
