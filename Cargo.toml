@@ -1,0 +1,6 @@
+[package]
+name = "rust_do_basico_ao_avancado"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
