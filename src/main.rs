@@ -1,3 +1,4 @@
+mod borrowing;
 mod condicionais;
 mod funcoes;
 mod lacos;
@@ -25,4 +26,5 @@ fn main() {
 
     println!("##### 4. Ownership, Borrowing e Lifetimes #####");
     ownership::run();
+    borrowing::run();
 }

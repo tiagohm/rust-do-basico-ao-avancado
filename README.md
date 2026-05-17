@@ -134,7 +134,7 @@ Este é o núcleo da linguagem.
 * Escopo e destruição
 * `Drop`
 
-### Borrowing
+### [Borrowing](src/borrowing.rs)
 
 * Referências imutáveis: `&T`
 * Referências mutáveis: `&mut T`
