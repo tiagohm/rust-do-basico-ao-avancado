@@ -106,7 +106,7 @@ Abaixo está a lista com tudo que você aprenderá:
 * Funções genéricas
 * Turbofish `::<T>`
 
-### Módulos básicos
+### [Módulos básicos](src/modulos_basicos.rs)
 
 * `mod`
 * `pub`

@@ -1,6 +1,7 @@
 mod condicionais;
 mod funcoes;
 mod lacos;
+mod modulos_basicos;
 mod operadores;
 mod pattern_matching;
 mod sintaxe_basica;
@@ -19,4 +20,5 @@ fn main() {
 
     println!("##### 3. Funções e organização inicial #####");
     funcoes::run();
+    modulos_basicos::run();
 }
