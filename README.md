@@ -149,13 +149,12 @@ Este é o núcleo da linguagem.
 * Empréstimo em loops
 * Empréstimo em closures
 
-### Lifetimes
+### [Lifetimes](src/lifetimes.rs)
 
 * Lifetime implícito
 * Lifetime explícito
 * Parâmetros de lifetime
 * Lifetime elision
-* Lifetime em funções
 * Lifetime em structs
 * Lifetime em enums
 * Lifetime em impl blocks
