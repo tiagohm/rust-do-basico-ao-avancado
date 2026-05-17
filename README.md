@@ -121,7 +121,7 @@ Abaixo está a lista com tudo que você aprenderá:
 
 Este é o núcleo da linguagem.
 
-### Ownership
+### [Ownership](src/ownership.rs)
 
 * Move semantics
 * Copy semantics
