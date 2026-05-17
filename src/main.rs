@@ -1,3 +1,4 @@
+mod condicionais;
 mod operadores;
 mod sintaxe_basica;
 mod tipos_primitivos;
@@ -7,4 +8,7 @@ fn main() {
     sintaxe_basica::run();
     tipos_primitivos::run();
     operadores::run();
+
+    println!("##### 2. Controle de fluxo #####");
+    condicionais::run();
 }

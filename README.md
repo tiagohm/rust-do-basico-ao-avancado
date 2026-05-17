@@ -40,7 +40,7 @@ Abaixo está a lista com tudo que você aprenderá:
 * Unit type: `()`
 * Never type: `!`
 
-### Operadores
+### [Operadores](src/operadores.rs)
 
 * Aritméticos: `+`, `-`, `*`, `/`, `%`
 * Comparação: `==`, `!=`, `<`, `>`, `<=`, `>=`
@@ -53,7 +53,7 @@ Abaixo está a lista com tudo que você aprenderá:
 
 ## 2. Controle de fluxo
 
-### Condicionais
+### [Condicionais](src/condicionais.rs)
 
 * `if`
 * `else`
