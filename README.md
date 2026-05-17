@@ -26,7 +26,7 @@ Abaixo está a lista com tudo que você aprenderá:
 * Estáticos com `static`
 * Convenções de nomes
 
-### Tipos primitivos
+### [Tipos primitivos](src/tipos_primitivos.rs)
 
 * Inteiros: `i8`, `i16`, `i32`, `i64`, `i128`, `isize`
 * Inteiros sem sinal: `u8`, `u16`, `u32`, `u64`, `u128`, `usize`

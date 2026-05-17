@@ -272,6 +272,7 @@ fn convencoes_de_nomes() {
 }
 
 pub fn run() {
+    println!("##### 1.1 Sintaxe básica #####");
     estrutura_de_um_programa();
     comentarios();
     blocos();
