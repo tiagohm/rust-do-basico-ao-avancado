@@ -2,7 +2,7 @@
 
 Um único lugar com tudo que você precisa para apreder Rust, do básico ao avançado, com foco em domínio real da linguagem.
 
-O arquivo [main.ts](src/main.rs) funciona como um roteiro de estudo executavel. Leia os comentarios e rode `cargo run` para ver os exemplos acontecendo.
+O arquivo [main.ts](src/main.rs) funciona como um roteiro de estudo executável. Leia os comentários e rode `cargo run` para ver os exemplos acontecendo.
 
 Abaixo está a lista com tudo que você aprenderá:
 
@@ -92,7 +92,7 @@ Abaixo está a lista com tudo que você aprenderá:
 
 ## 3. Funções e organização inicial
 
-### Funções
+### [Funções](src/funcoes.rs)
 
 * Declaração de função
 * Parâmetros
@@ -101,8 +101,10 @@ Abaixo está a lista com tudo que você aprenderá:
 * Retorno explícito com `return`
 * Funções associadas
 * Métodos
+* `self`, `&self` e `&mut self`
 * Overloading inexistente em Rust
 * Funções genéricas
+* Turbofish `::<T>`
 
 ### Módulos básicos
 
@@ -1333,13 +1335,6 @@ Este é o núcleo da linguagem.
 * `#![deny(missing_docs)]`
 * `#![deny(clippy::unwrap_used)]`
 * `#![deny(clippy::expect_used)]`
-* CI
-* GitHub Actions
-* Test matrix
-* Coverage
-* Release automation
-* Changelog
-* SemVer
 
 ## 35. Tópicos internos do compilador
 
@@ -1493,40 +1488,3 @@ Para nível expert real:
 16. FFI
 17. `no_std`, WASM ou backend, conforme seu objetivo
 18. Internals do compilador, memory model e design avançado de bibliotecas
-
-## 41. Lista curta dos tópicos mais importantes
-
-Para ficar realmente forte em Rust, os tópicos mais críticos são:
-
-* Ownership
-* Borrowing
-* Lifetimes
-* `struct`
-* `enum`
-* `match`
-* `Option`
-* `Result`
-* Traits
-* Generics
-* Iterators
-* `Box`
-* `Rc`
-* `Arc`
-* `RefCell`
-* `Mutex`
-* `RwLock`
-* `Send`
-* `Sync`
-* `async/await`
-* `Future`
-* `Pin`
-* Error handling
-* Cargo
-* Testing
-* `unsafe`
-* FFI
-* Performance
-* API design
-* Memory layout
-* Concurrency
-* Macros
